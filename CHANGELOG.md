@@ -10,6 +10,27 @@
 
 
 
+## [0.38.0](https://www.github.com/libp2p/js-libp2p/compare/v0.37.3...v0.38.0) (2022-06-29)
+
+
+### ⚠ BREAKING CHANGES
+
+* `connectionManager.peerValue` has been removed, use `peerStore.tagPeer` instead
+* limit protocol streams per-connection (#1255)
+* uses new single-issue libp2p interface modules
+
+### Features
+
+* limit protocol streams per-connection ([#1255](https://www.github.com/libp2p/js-libp2p/issues/1255)) ([de30c2c](https://www.github.com/libp2p/js-libp2p/commit/de30c2cec79d1e9d758cbcddc11d315b17843343))
+* update libp2p interfaces ([#1252](https://www.github.com/libp2p/js-libp2p/issues/1252)) ([d4dd664](https://www.github.com/libp2p/js-libp2p/commit/d4dd664071476e3d22f53e02e7d66099f3265f6c))
+* use tag values to choose which connections to close ([#1276](https://www.github.com/libp2p/js-libp2p/issues/1276)) ([b1b2b21](https://www.github.com/libp2p/js-libp2p/commit/b1b2b216daf12caccd67503dfd7b296b191c5b83))
+
+
+### Bug Fixes
+
+* specify max stream args separately ([#1254](https://www.github.com/libp2p/js-libp2p/issues/1254)) ([5371729](https://www.github.com/libp2p/js-libp2p/commit/53717296468ef17fdc3e0dda9d5908b15d2772a1))
+* use keep-alive tag to reconnect to peers on startup ([#1278](https://www.github.com/libp2p/js-libp2p/issues/1278)) ([2836acc](https://www.github.com/libp2p/js-libp2p/commit/2836acc90f8eafd2106539a80ac7d3b307c0bd02))
+
 ### [0.37.3](https://www.github.com/libp2p/js-libp2p/compare/v0.37.2...v0.37.3) (2022-06-08)
 
 
