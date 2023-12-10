@@ -37,7 +37,7 @@
     "docs:no-publish": "NODE_OPTIONS=--max_old_space_size=8192 aegir docs --publish false -- --exclude interop --exclude examples --exclude doc"
   },
   "devDependencies": {
-    "aegir": "^40.0.1"
+    "aegir": "^40.0.11"
   },
   "eslintConfig": {
     "extends": "ipfs",
@@ -50,5 +50,12 @@
     "examples/*",
     "interop",
     "packages/*"
-  ]
+  ],
+  "dependencies": {
+    "@libp2p/interface": "^0.1.2",
+    "@libp2p/mplex": "^9.0.4",
+    "@libp2p/peer-id": "^3.0.2",
+    "@types/node": "^20.5.1",
+    "multiformats": "^12.0.1"
+  }
 }
